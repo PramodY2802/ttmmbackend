@@ -240,7 +240,7 @@ router.post("/login", async (req, res) => {
         from: gmailUser,
         to: email,
         subject: "Reset Password",
-        text: `http://localhost:3000/resetPassword/${encodedToken}`,
+        text: `https://stately-mermaid-8ef18e.netlify.app/resetPassword/${encodedToken}`,
       };
   
       transporter.sendMail(mailOptions, function (error, info) {
